@@ -1,0 +1,5 @@
+[2023-02-20T03:24:32.897484+01:00] Akmalmp\BelajarPhpMvc\HandlerTest.WARNING: This is warning [] []
+[2023-02-20T03:24:32.898009+01:00] Akmalmp\BelajarPhpMvc\HandlerTest.ERROR: This is error [] []
+[2023-02-20T03:24:32.898169+01:00] Akmalmp\BelajarPhpMvc\HandlerTest.CRITICAL: This is critical [] []
+[2023-02-20T03:24:32.898318+01:00] Akmalmp\BelajarPhpMvc\HandlerTest.ALERT: This is alert [] []
+[2023-02-20T03:24:32.898463+01:00] Akmalmp\BelajarPhpMvc\HandlerTest.EMERGENCY: This is emergency [] []
