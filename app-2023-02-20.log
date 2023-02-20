@@ -1,0 +1,4 @@
+[2023-02-20T15:22:12.293758+01:00] Akmalmp\BelajarLogger\RotatingFileTest.INFO: Belajar PHP [] []
+[2023-02-20T15:22:12.295851+01:00] Akmalmp\BelajarLogger\RotatingFileTest.INFO: Belajar PHP OOP [] []
+[2023-02-20T15:22:12.295911+01:00] Akmalmp\BelajarLogger\RotatingFileTest.INFO: Belajar PHP MVC [] []
+[2023-02-20T15:22:12.295953+01:00] Akmalmp\BelajarLogger\RotatingFileTest.INFO: Belajar PHP Logging [] []

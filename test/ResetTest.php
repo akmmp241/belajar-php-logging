@@ -9,26 +9,23 @@ use Monolog\Processor\HostnameProcessor;
 use Monolog\Processor\MemoryUsageProcessor;
 use PHPUnit\Framework\TestCase;
 
-class ProcessorTest extends TestCase
+class ResetTest extends TestCase
 {
-    public function testProcessorRecord()
+    public function testReset()
     {
-        $logger = new Logger(ProcessorTest::class);
+        $logger = new Logger(ResetTest::class);
         $logger->pushHandler(new StreamHandler("php://stderr"));
+        $logger->pushHandler(new StreamHandler(__DIR__ . '/../application.log'));
         $logger->pushProcessor(new GitProcessor());
         $logger->pushProcessor(new MemoryUsageProcessor());
         $logger->pushProcessor(new HostnameProcessor());
-        $logger->pushProcessor(function ($record) {
-            $record['extra']['akm'] = [
-                "app" => "Belajar PHP Logging",
-                "author" => "Akmal Muhammad p"
-            ];
-            return $record;
-        });
 
-        $logger->info("Hello World", ['username' => "akmal"]);
-        $logger->info("Hello World");
-        $logger->info("Hello World lagi");
+        for ($i = 0; $i < 10000; $i++) {
+            $logger->info("Perulangan ke-$i");
+            if ($i % 100 == 0) {
+                $logger->reset();
+            }
+        }
 
         self::assertNotNull($logger);
     }

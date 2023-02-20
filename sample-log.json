@@ -1,0 +1,18 @@
+{
+  "message": "Belajar PHP Logging",
+  "context": {
+    "username": "akm"
+  },
+  "level": 200,
+  "level_name": "INFO",
+  "channel": "Akmalmp\\BelajarLogger\\FormatTest",
+  "datetime": "2023-02-20T15:13:56.941699+01:00",
+  "extra": {
+    "hostname": "Laptop-Akmal",
+    "memory_usage": "4 MB",
+    "git": {
+      "branch": "master",
+      "commit": "e257bab536b4fe8c544f605bc8303ea2650c96e0"
+    }
+  }
+}
